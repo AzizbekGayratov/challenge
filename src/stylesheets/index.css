@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  #root {
+    @apply min-h-screen bg-Secondary
+  }
+
+  main {
+    @apply flex-1
+  }
+
+  .header_shadow {
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.12);
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .home_slider_left_btn {
+    @apply -ml-28
+  }
+
+  .home_slider_right_btn {
+    @apply -mr-28
+  }
+
+  @media screen and (max-width: 1375px) {
+    .home_slider_left_btn, .home_slider_right_btn {
+      margin: 0;
+    }
+  }
+
+  .button {
+    /* medium 16 */
+    color: rgb(255, 255, 255);
+    font-family: "Inter", sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+    background: linear-gradient(270.00deg, rgb(77, 94, 246), rgb(246, 77, 77) 100%);
+  }
+
+  .button:active {
+    /* color: rgb(16, 24, 40); */
+    text-align: center;
+    background: linear-gradient(270.00deg, rgb(112, 122, 214), rgba(188, 95, 95, 0.878) 100%);
+  }
+
+  .listik li:hover {
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 10px;
+    transition-duration: 0.2s;
+  }
+  
+  .listik li:active {
+    background-color: white;
+    padding-left: 10px;
+
+  }
+
+        .listik li {
+          cursor: pointer;
+          margin-bottom: 10px;
+    padding-block: 0.2em;
+        }
+
+
+  .footer_list_item {
+    @apply text-Main font-[653]
+  }
+
+  shadow {
+    -webkit-box-shadow: 0px 1px 5px 3px rgba(148, 148, 148, 0.86);
+      -moz-box-shadow: 0px 1px 5px 3px rgba(148, 148, 148, 0.86);
+      box-shadow: 0px 1px 5px 3px rgba(148, 148, 148, 0.86);
+  }
+
+  .footer_mobile_bg {
+    /* Button/gradient 20 */
+    background: linear-gradient(270.00deg, rgba(77, 94, 246, 0.2), rgba(246, 77, 77, 0.2) 100%);
+  }
+
+  .footer_divider {
+    background: linear-gradient(270.00deg, rgba(77, 94, 246, 0.2), rgba(246, 77, 77, 0.2) 100%);
+  }
+}
